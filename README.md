@@ -19,7 +19,7 @@ Rotate throw a set of 360 degree images using your mouse or finger.
 
 | Name | Description | Link |
 |:-----------|:------------|:------------|
-| Default | Includes most features. | [Try it on CodePen](http://codepen.io/electerious/pen/GjpXRX) |
+| Default | Includes most features. | [Try it on CodePen](https://codepen.io/electerious/pen/wVYoYK) |
 
 ## Features
 
