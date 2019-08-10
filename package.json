@@ -4,7 +4,7 @@
   "authors": [
     "Tobias Reich <tobias@electerious.com>"
   ],
-  "description": "Rotate throw a set of 360 degree images using your mouse or finger.",
+  "description": "Rotate throw a set of 360 degree images using your mouse or finger",
   "main": "dist/basicRotate.min.js",
   "keywords": [
     "slider",
