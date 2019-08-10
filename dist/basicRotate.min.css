@@ -1,0 +1,1 @@
+.basicRotate{position:relative;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:-webkit-grab;cursor:grab}.basicRotate:active{cursor:-webkit-grabbing;cursor:grabbing}.basicRotate img{position:absolute;top:0;left:0;width:100%;opacity:0;pointer-events:none}.basicRotate img:first-child{position:relative}.basicRotate img.active{opacity:1}

@@ -1,0 +1,39 @@
+{
+  "name": "basicRotate",
+  "version": "1.0.0",
+  "authors": [
+    "Tobias Reich <tobias@electerious.com>"
+  ],
+  "description": "Rotate throw a set of 360 degree images using your mouse or finger.",
+  "main": "dist/basicRotate.min.js",
+  "keywords": [
+    "slider",
+    "slides",
+    "carousel",
+    "rotate",
+    "rotation",
+    "360",
+    "surround",
+    "reel"
+  ],
+  "scripts": {
+    "build": "node build.js"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/electerious/basicRotate",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/electerious/basicRotate.git"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "dependencies": {
+    "count-between": "^2.0.2"
+  },
+  "devDependencies": {
+    "rosid-handler-js": "^12.1.0",
+    "rosid-handler-sass": "^6.0.4"
+  }
+}
