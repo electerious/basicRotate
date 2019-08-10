@@ -23,8 +23,8 @@ const validate = function(opts = {}) {
 const getMousePosition = function(e) {
 
 	return {
-		x: e.pageX,
-		y: e.pageY
+		x: e.pageX || e.touches[0].pageX,
+		y: e.pageY || e.touches[0].pageY
 	}
 
 }
@@ -59,14 +59,14 @@ const init = function(elem, images, instance, opts) {
 		startPosition != null
 	)
 
-	elem.onmousedown = (e) => {
+	const start = (e) => {
 
 		startIndex = instance.current()
 		startPosition = getMousePosition(e)
 
 	}
 
-	document.addEventListener('mousemove', (e) => {
+	const move = (e) => {
 
 		if (isDragging() === false) return
 
@@ -76,14 +76,23 @@ const init = function(elem, images, instance, opts) {
 
 		instance.goto(startIndex + offset)
 
-	})
+	}
 
-	document.addEventListener('mouseup', () => {
+	const end = () => {
 
 		startIndex = undefined
 		startPosition = undefined
 
-	})
+	}
+
+	elem.ontouchstart = start
+	elem.onmousedown = start
+
+	document.addEventListener('touchmove', move)
+	document.addEventListener('mousemove', move)
+
+	document.addEventListener('touchend', end)
+	document.addEventListener('mouseup', end)
 
 }
 
